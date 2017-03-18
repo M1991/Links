@@ -1,0 +1,29 @@
+
+  ====	How to master angular js  (StackOverflow.com) ====
+
+
+   http://www.egghead.io/ - 		Series of short, to the point AngularJS videos
+   
+   https://www.cheatography.com/proloser/cheat-sheets/angularjs/  -				 regularly updated cheatsheet [latest update 13th February, 2013]
+
+   http://jimhoskins.com/2012/12/14/nested-scopes-in-angularjs.html -			 Points out possible problems when using scope inheritance (references a good talk by Misko Hevery that you should also watch)
+
+   https://docs.angularjs.org/guide/di							 			- Official developer guide on DI
+
+   Dependency injection - More on AngularJS dependency injection
+
+   http://iffycan.blogspot.in/2013/05/angular-service-or-factory.html - Differences between the various types of providers
+
+	https://docs.angularjs.org/guide/directiveDirectives - Official developer guide on directives
+
+   https://amitgharat.wordpress.com/2013/06/08/the-hitchhikers-guide-to-the-directive/  Directives - The hitchhiker's guide to the directive
+
+   https://github.com/angular-app/angular-app   Project structure - Check out this app
+
+	https://angular-ui.github.io/	Angular-UI - Must use components for any UI development
+
+	http://angular-ui.github.io/bootstrap/		UI-Bootstrap - From-scratch JS re-implementations of bootstrap components as AngularJS directives
+
+	https://www.yearofmoo.com/2013/01/full-spectrum-testing-with-angularjs-and-karma.html		Full-Spectrum Testing with AngularJS and Karma
+
+	http://stackoverflow.com/questions/9682092/how-does-data-binding-work-in-angularjs/9693933#9693933			Bonus - Data binding in AngularJS, explained by Misko Hevery himself.

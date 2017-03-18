@@ -1,0 +1,79 @@
+REST = REpresentational State Transfer. REST is an architectural style for network based software that requires stateless, cacheable, client-server communication via a uniform interface between components.
+
+
+The primary focus of this blog post is to introduce REST along with REST terminology, REST concepts, and some simple examples describing what REST looks like in practice. As a secondary focus, I will address a topic that often confuses folks. Many folks often ask to compare REST vs SOAP. This comparison does not make sense. REST is an architectural style, while SOAP, like HTTP, is communication protocol. What does this mean? Well, REST and SOAP are not mutually exclusive. In theory, they can be used together. I would highly recommend against this usage, but their is nothing about the REST style that prohibits this case. During this post we’ll touch on this. We’ll also see why REST is so widely used over HTTP. All in all, the primary focus will remain an introduction to REST!
+
+
+
+Basic Principles
+======================================
+
+Client-Server Communication  === 
+Client-server architectures have a very distinct separation of concerns. All applications built in the RESTful style must also be client-server in princple.
+
+
+Stateless
+Each each client request to the server requires that its state be fully represented. The server must be able to completely understand the client request without using any server context or server session state. It follows that all state must be kept on the client. We will discuss stateless representation in more detail later.
+
+
+Cacheable
+Cache constraints may be used, thus enabling response data to to be marked as cacheable or not-cachable. Any data marked as cacheable may be reused as the response to the same subsequent request.
+
+
+Uniform Interface
+All components must interact through a single uniform interface. Because all component interaction occurs via this interface, interaction with different services is very simple. The interface is the same! This also means that implementation changes can be made in isolation. Such changes, will not affect fundamental component interaction because the uniform interface is always unchanged. One disadvantage is that you are stuck with the interface. If an optimization could be provided to a specific service by changing the interface, you are out of luck as REST prohibits this. On the bright side, however, REST is optimized for the web, hence incredible popularity of REST over HTTP!
+
+The above concepts represent defining characteristics of REST and differentiate the REST architecture from other architectures like web services. It is useful to note that a REST service is a web service, but a web service is not necessarily a REST service.
+
+ 
+
+Let’s now dive into a bit more detail and discuss a variety of elements used to compose a RESTful system.
+
+
+Resource and Resource Identifier:
+A key abstraction of REST is the resource. A resource can be just about anything. It can be a document or an image, an object, a collection of other resources, and more.  A resource is identify by its resource identifier. The resource identifier is often used when multiple components communicate with one another. They are able to reference specific resources using the resource identifier.
+
+ 
+ 
+Representation:
+Components perform actions a resource by applying operation provided by the component’s uniform interface. A resource is represented by its current state or its intended state (assuming the action will modify the resource in some way). This representation includes a sequence of bytes and some description of those bytes. The format of a representation is defined as its media type.
+
+In practice, resources are often represented as XML, JSON, RDF, and more
+
+
+Basic Principles in Practice
+Let’s harken back to the Basic Principles section and describe how those principles can be applied in practice.
+
+
+
+Client-server
+HTTP is a client-server protocol. Why not use it with REST. Check!
+
+
+Uniform Interface
+REST is optimized for the web, thus HTTP is typically used. HTTP defines GET,POST, PUT, DELETE. Woah! That meets REST’s requirement to provide a uniform interface for components. 
+
+
+Cacheable
+HTTP provides a cache control mechanism. See here. Dang! HTTP just filled another REST requirement
+
+
+
+In practice, resources are nouns. Resources and identified by URIs
+
+
+Stateless
+================================
+Let’s apply some rules to the uniform interface provided by HTTP
+
+GET – Safe, Cacheable, Idempotent
+PUT – Idempotent
+DELETE – Idempotent
+HEAD – Safe, Idempotent
+POST – n/a
+
+Cool! But what does that mean?
+
+– Safe – the operation must not have side effects
+– Cacheable – the result may be cached e.g. by a proxy server
+– Idempotent – The operation must always return the same result
