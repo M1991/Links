@@ -1,0 +1,27 @@
+
+
+========================
+https://devdactic.com/improving-rest-with-ngresource/
+
+
+
+======================== SAMPLE
+http://jsonplaceholder.typicode.com/
+
+
+
+========================= REST CRUD
+http://draptik.github.io/blog/2013/07/28/restful-crud-with-angularjs/
+
+
+
+========================= 
+http://websystique.com/angularjs/angularjs-crud-application-using-ngresource/
+
+
+
+
+========================= 
+https://www.sitepoint.com/creating-crud-app-minutes-angulars-resource/
+
+
