@@ -1,0 +1,42 @@
+
+====================JSON to POJO
+http://www.jsonschema2pojo.org/
+
+
+==============  CHECK WITH THIS
+http://chris.photobooks.com/json/default.htm
+
+
+
+============ ONLINE EDITOR
+http://jsoneditoronline.org/
+
+
+==============  LEARNING
+https://spacetelescope.github.io/understanding-json-schema/
+
+ +++++ http://json-schema.org/documentation.html
+
+
+
+
+http://schemaform.io/
+
+
+
+=================    EXAMPLES
+http://ulion.github.io/jsonform/playground/?example=fields-advancedfieldset
+
+
+
+https://github.com/joshfire/jsonform/wiki
+
+
+
+https://github.com/jdorn/json-editor
+
+
+
+
+http://jeremydorn.com/json-editor/
+
